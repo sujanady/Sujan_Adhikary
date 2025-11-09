@@ -52,7 +52,7 @@ const Body = () => {
               className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400 flex justify-center items-center"
             >
               <img
-                src="/public/github.png"
+                src="/github.png"
                 alt="GitHub"
                 className="w-[45px] h-[45px] invert"
               />
@@ -95,7 +95,7 @@ const Body = () => {
       {/* Right Side */}
       <div className="w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
         <img
-          src="/public/developer.svg"
+          src="/developer.svg"
           alt="Developer illustration"
           className="w-[80%] max-w-lg drop-shadow-[0_0_40px_rgba(56,189,248,0.3)] animate-float"
         />
