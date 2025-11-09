@@ -7,7 +7,7 @@ const Body = () => {
 
   const [text, setText] = useState('Initial Text');
   const [index, setIndex] = useState(0);
-  const textArray = [' Web ', ' Front-end Development', ' Back-end Development', ' Web Designing'];
+  const textArray = [' Web ', ' Front-end', ' Back-end', ' Web Designing'];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -18,51 +18,88 @@ const Body = () => {
   }, []);
 
   return (
-    <div className=' h-[100vh] w-[100%] bg-slate-600 flex'>
-      <div className="left w-1/2 h-full flex justify-center items-center ">
+    <div className="h-screen w-full bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 flex flex-col md:flex-row items-center justify-center px-10 overflow-hidden">
+      {/* Left Side */}
+      <div className="w-full md:w-1/2 h-full flex justify-center items-center">
+        <div className="w-[85%] max-w-xl">
+          <h2 className="text-4xl md:text-5xl font-semibold text-yellow-300 mb-4">Hi there, 👋</h2>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-100 mb-4">I'm Sujan Adhikary</h1>
+          <h3 className="text-3xl md:text-5xl font-semibold text-yellow-300 mb-6">Working at TCS</h3>
 
-        <div className=" left-box w-[80%] h-[65%]">
-          <div className='text-5xl my-6 text-yellow-300'>Hii there,</div>
-
-          <p className='text-5xl text-gray-100 my-6'>I'm Sujan Adhikary</p>
-          <p className='text-5xl text-yellow-300 my-6'>Working at TCS</p>
-
-          <div className="dynemic">
-            <span className='text-4xl text-blue-500'>I'm into</span>
-
-            <span className='text-4xl text-amber-400'> {textArray[index]}</span>
+          {/* Dynamic text */}
+          <div className="flex items-center gap-3 text-3xl md:text-4xl mb-10">
+            <span className="text-blue-400 font-semibold">I'm into</span>
+            <span className="text-amber-400 font-bold animate-pulse">{textArray[index]}</span>
           </div>
 
-          <div className="icons flex gap-10 mt-10">
-            <p className='cursor-pointer hover:bg-slate-500 hover:ring-1 hover:ring-black rounded-2xl' > <a href="https://www.google.com" target='_blank' > <lord-icon style={{ width: '65px', height: '65px' }} src="https://cdn.lordicon.com/kozzgyfy.json" trigger="hover"> </lord-icon> </a> </p>
-            <p style={{ width: '65px', height: '65px' }} className='flex justify-center items-center cursor-pointer hover:bg-slate-500 hover:ring-1 hover:ring-black rounded-2xl'>
-              <a href="https://your-github-link.com" target='_blank'>
-                <img style={{ width: '55px', height: '55px' }} src="public\github.png" alt="GitHub Link" />
-              </a>
-            </p>            <p className='cursor-pointer hover:bg-te-500 hover:ring-1 hover:ring-black rounded-2xl'>
-              <a href="https://your-first-link.com" target='_blank'>
-                <lord-icon style={{ width: '65px', height: '65px' }} src="https://cdn.lordicon.com/xowsaqcr.json" trigger="hover"></lord-icon>
-              </a>
-            </p>
+          {/* Icons */}
+          <div className="flex gap-8 mt-8">
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400"
+            >
+              <lord-icon
+                src="https://cdn.lordicon.com/kozzgyfy.json"
+                trigger="hover"
+                style={{ width: "55px", height: "55px" }}
+              ></lord-icon>
+            </a>
 
+            <a
+              href="https://your-github-link.com"
+              target="_blank"
+              className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400 flex justify-center items-center"
+            >
+              <img
+                src="/public/github.png"
+                alt="GitHub"
+                className="w-[45px] h-[45px] invert"
+              />
+            </a>
 
-            <p className='cursor-pointer hover:bg-slate-500 hover:ring-1 hover:ring-black rounded-2xl'>
-              <a href="https://your-second-link.com" target='_blank'>
-                <lord-icon style={{ width: '65px', height: '65px' }} src="https://cdn.lordicon.com/qrsdbrog.json" trigger="hover"></lord-icon>
-              </a>
-            </p>
+            <a
+              href="https://your-first-link.com"
+              target="_blank"
+              className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400"
+            >
+              <lord-icon
+                src="https://cdn.lordicon.com/xowsaqcr.json"
+                trigger="hover"
+                style={{ width: "55px", height: "55px" }}
+              ></lord-icon>
+            </a>
+
+            <a
+              href="https://your-second-link.com"
+              target="_blank"
+              className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400"
+            >
+              <lord-icon
+                src="https://cdn.lordicon.com/qrsdbrog.json"
+                trigger="hover"
+                style={{ width: "55px", height: "55px" }}
+              ></lord-icon>
+            </a>
           </div>
 
-          <div className="mx-[22%] w-32 h-12 mt-8">
-            <button className='font-bold bg-sky-500 text-amber-400 w-32 h-12 rounded-lg ring-1 ring-black '>Resume</button>
+          {/* Resume Button */}
+          <div className="mt-10">
+            <button className="font-bold bg-gradient-to-r from-sky-500 to-blue-600 text-amber-300 px-8 py-3 rounded-lg ring-1 ring-slate-400 hover:scale-105 hover:shadow-lg transition-all">
+              Resume
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="right w-1/2 flex justify-center items-center">
-        <img className='' src="public\developer.svg" alt="" />
+      {/* Right Side */}
+      <div className="w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
+        <img
+          src="/public/developer.svg"
+          alt="Developer illustration"
+          className="w-[80%] max-w-lg drop-shadow-[0_0_40px_rgba(56,189,248,0.3)] animate-float"
+        />
       </div>
-
     </div>
   )
 }
