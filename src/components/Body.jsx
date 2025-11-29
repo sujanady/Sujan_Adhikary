@@ -2,6 +2,26 @@ import React from 'react'
 
 import { useState, useEffect } from 'react';
 
+function Icon({ link, icon, alt }) {
+  return (
+    <>
+      <a
+        href={link}
+        target="_blank"
+        className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400 flex justify-center items-center"
+      >
+        <img
+          src={icon}
+          alt={alt}
+          className="w-[45px] h-[45px] invert"
+        />
+      </a>
+
+    </>
+  )
+}
+
+
 
 const Body = () => {
 
@@ -34,53 +54,13 @@ const Body = () => {
 
           {/* Icons */}
           <div className="flex gap-8 mt-8">
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400"
-            >
-              <lord-icon
-                src="https://cdn.lordicon.com/kozzgyfy.json"
-                trigger="hover"
-                style={{ width: "55px", height: "55px" }}
-              ></lord-icon>
-            </a>
+            <Icon link="https://linkedin.com/in/sujan-adhikary-840861334" icon='/linkdin.svg' alt='Github' />
 
-            <a
-              href="https://your-github-link.com"
-              target="_blank"
-              className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400 flex justify-center items-center"
-            >
-              <img
-                src="/github.png"
-                alt="GitHub"
-                className="w-[45px] h-[45px] invert"
-              />
-            </a>
+            <Icon link="https://github.com/sujanady" icon='/github.svg' alt='Github' />
 
-            <a
-              href="https://your-first-link.com"
-              target="_blank"
-              className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400"
-            >
-              <lord-icon
-                src="https://cdn.lordicon.com/xowsaqcr.json"
-                trigger="hover"
-                style={{ width: "55px", height: "55px" }}
-              ></lord-icon>
-            </a>
+            <Icon link="https://x.com/sujanady" icon='/x.svg' alt='Github' />
 
-            <a
-              href="https://your-second-link.com"
-              target="_blank"
-              className="hover:scale-110 transition-transform bg-slate-700/50 p-3 rounded-2xl ring-1 ring-slate-500 hover:ring-amber-400"
-            >
-              <lord-icon
-                src="https://cdn.lordicon.com/qrsdbrog.json"
-                trigger="hover"
-                style={{ width: "55px", height: "55px" }}
-              ></lord-icon>
-            </a>
+            <Icon link="https://www.facebook.com/sujan.adhikary26/" icon='/facebook.svg' alt='Github' />
           </div>
 
           {/* Resume Button */}

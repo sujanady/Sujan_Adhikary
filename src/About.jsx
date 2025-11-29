@@ -3,10 +3,10 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className=' h-[250vh] w-[100%] bg-slate-900 pd-[10vh] '>
+        <div className=' h-[250vh] w-[100%] bg-slate-900  '>
 
 
-            <div className="About w-[90%] mx-auto mt-[10vh] px-[5%] py-10 bg-gradient-to-b from-slate-950 to-black rounded-3xl shadow-inner">
+            <div className="About w-[90%] mx-auto mt-[vh] px-[5%]  bg-gradient-to-b from-slate-950 to-black rounded-3xl shadow-inner">
                 {/* Section Title */}
                 <div className="flex justify-center items-center gap-3 mb-10">
                     <span className="material-icons text-6xl text-blue-400">person</span>
