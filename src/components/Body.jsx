@@ -38,22 +38,22 @@ const Body = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 flex flex-col md:flex-row items-center justify-center px-10 overflow-hidden">
+    <div className="min-h-screen pt-24 pb-12 w-full bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 flex flex-col md:flex-row items-center justify-center px-6 sm:px-10 overflow-hidden">
       {/* Left Side */}
-      <div className="w-full md:w-1/2 h-full flex justify-center items-center">
-        <div className="w-[85%] max-w-xl">
+      <div className="w-full md:w-1/2 h-full flex justify-center items-center mt-8 md:mt-0">
+        <div className="w-full sm:w-[85%] max-w-xl text-center md:text-left">
           <h2 className="text-4xl md:text-5xl font-semibold text-yellow-300 mb-4">Hi there, 👋</h2>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-100 mb-4">I'm Sujan Adhikary</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-100 mb-4">I'm Sujan Adhikary</h1>
           <h3 className="text-3xl md:text-5xl font-semibold text-yellow-300 mb-6">Working at TCS</h3>
 
           {/* Dynamic text */}
-          <div className="flex items-center gap-3 text-3xl md:text-4xl mb-10">
+          <div className="flex justify-center md:justify-start items-center gap-2 sm:gap-3 text-2xl sm:text-3xl md:text-4xl mb-10">
             <span className="text-blue-400 font-semibold">I'm into</span>
             <span className="text-amber-400 font-bold animate-pulse">{textArray[index]}</span>
           </div>
 
           {/* Icons */}
-          <div className="flex gap-8 mt-8">
+          <div className="flex justify-center md:justify-start flex-wrap gap-4 sm:gap-8 mt-8">
             <Icon link="https://linkedin.com/in/sujan-adhikary-840861334" icon='/linkdin.svg' alt='Github' />
 
             <Icon link="https://github.com/sujanady" icon='/github.svg' alt='Github' />

@@ -3,10 +3,10 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className=' h-[250vh] w-[100%] bg-slate-900  '>
+        <div className=' min-h-screen w-[100%] bg-slate-900 py-16 pb-24 '>
 
 
-            <div className="About w-[90%] mx-auto mt-[vh] px-[5%]  bg-gradient-to-b from-slate-950 to-black rounded-3xl shadow-inner">
+            <div className="About w-[90%] mx-auto mt-10 px-[5%] py-10 bg-gradient-to-b from-slate-950 to-black rounded-3xl shadow-inner">
                 {/* Section Title */}
                 <div className="flex justify-center items-center gap-3 mb-10">
                     <span className="material-icons text-6xl text-blue-400">person</span>
@@ -26,13 +26,13 @@ const About = () => {
 
                     {/* Text Section */}
                     <div className="space-y-3 text-center sm:text-left max-w-3xl">
-                        <h3 className="text-3xl font-bold text-yellow-400">I'm Sujan Adhikary</h3>
-                        <p className="text-2xl text-blue-400">Full Stack Developer</p>
-                        <p className="text-2xl text-blue-400">Working at Tata Consultancy Services</p>
-                        <p className="text-lg text-yellow-300">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-yellow-400">I'm Sujan Adhikary</h3>
+                        <p className="text-xl sm:text-2xl text-blue-400">Full Stack Developer</p>
+                        <p className="text-xl sm:text-2xl text-blue-400">Working at Tata Consultancy Services</p>
+                        <p className="text-base sm:text-lg text-yellow-300">
                             <span className="font-semibold">Email:</span> sujanady@gmail.com
                         </p>
-                        <p className="text-white text-lg leading-relaxed">
+                        <p className="text-white text-base sm:text-lg leading-relaxed">
                             I am a passionate Full Stack Developer specializing in modern web technologies.
                             I enjoy building interactive, scalable applications and continuously learning
                             about new frameworks and tools that make the web more dynamic and efficient,
@@ -48,13 +48,13 @@ const About = () => {
 
 
 
-            {/* Work Experiance */}
+            {/* Work Experience */}
             <div className="Work w-[90%] mx-auto px-[5%] mt-[10vh] py-10 bg-gradient-to-b from-slate-950 to-black rounded-3xl shadow-inner">
                 {/* Section Title */}
-                <div className="flex justify-center items-center gap-3 mb-10">
-                    <span className="material-icons text-6xl text-blue-400">work</span>
-                    <h2 className="text-4xl font-semibold text-white tracking-wide">
-                        Work Experiance
+                <div className="flex flex-wrap justify-center text-center items-center gap-3 mb-10">
+                    <span className="material-icons text-5xl sm:text-6xl text-blue-400">work</span>
+                    <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-wide">
+                        Work Experience
                     </h2>
                 </div>
 
@@ -92,9 +92,9 @@ const About = () => {
             {/* Education */}
             <div className="Education w-[90%] mx-auto mt-[10vh] px-[5%] py-10 bg-gradient-to-b from-slate-950 to-black rounded-3xl shadow-inner">
                 {/* Section Title */}
-                <div className="flex justify-center items-center gap-3 mb-10">
-                    <span className="material-icons text-6xl text-blue-400">school</span>
-                    <h2 className="text-4xl font-semibold text-white tracking-wide">Education</h2>
+                <div className="flex flex-wrap justify-center text-center items-center gap-3 mb-10">
+                    <span className="material-icons text-5xl sm:text-6xl text-blue-400">school</span>
+                    <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-wide">Education</h2>
                 </div>
 
                 {/* University Card */}
